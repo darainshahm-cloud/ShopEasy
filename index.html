@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Home</title>
+
+    <!-- Website Tab Image (Favicon) -->
+    <link rel="icon" type="image/png" sizes="64x64" href="images/imag1.png">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo-container"
+                style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <img src="images/imag1.png" alt="ShopEasy Logo"
+                    style="width: 100px; height: 100px; object-fit: contain; border-radius: 20px;">
+                <span class="logo">ShopEasy</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to ShopEasy</h1>
+            <p>Discover premium products at unbelievable prices right from your browser.</p>
+        </section>
+
+        <section>
+            <h2 style="margin-bottom: 20px;">Featured Products</h2>
+            <div id="product-grid" class="product-grid">
+                <!-- Loaded dynamically via jQuery -->
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 style="margin-bottom: 20px;">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-title">What payment methods do you support?</div>
+                <div class="faq-content">We accept Cash on Delivery, Credit/Debit cards, and online transfers.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">How long does delivery take?</div>
+                <div class="faq-content">Standard delivery takes between 3 to 5 business days.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-title">Can I return items?</div>
+                <div class="faq-content">Yes! You can request returns within 7 days of receiving your package.</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification">Notification</div>
+
+    <footer>
+        <p>&copy; 2026 ShopEasy Web Store. All rights reserved.</p>
+        <p style="text-align: right; color: #7d08ea; font-weight: 600;">Syed Muhammad Darain Shah</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>

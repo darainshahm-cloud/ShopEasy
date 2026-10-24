@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Products</title>
+
+  <!-- Website Tab Image (Favicon) -->
+  <link rel="icon" type="image/png" sizes="64x64" href="images/imag1.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo-container"
+        style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+        <img src="images/imag1.png" alt="ShopEasy Logo"
+          style="width: 100px; height: 100px; object-fit: contain; border-radius: 20px;">
+        <span class="logo">ShopEasy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="margin-bottom: 20px;">Product Catalogue</h1>
+
+    <div class="controls-bar">
+      <input type="text" id="search-input" placeholder="Search products by name...">
+
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="footwear">Footwear</option>
+        <option value="accessories">Accessories</option>
+      </select>
+
+      <select id="sort-filter">
+        <option value="default">Sort by</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <div id="product-grid" class="product-grid">
+      <!-- Dynamic Products Grid -->
+    </div>
+  </main>
+
+  <div id="notification">Notification</div>
+
+  <footer>
+    <p>&copy; 2026 ShopEasy Web Store. All rights reserved.</p>
+    <p style="text-align: right;">Syed Muhammad Darain Shah</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Cart</title>
+
+
+  <!-- Website Tab Image (Favicon) -->
+  <link rel="icon" type="image/png" sizes="64x64" href="images/imag1.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo-container"
+        style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+        <img src="images/imag1.png" alt="ShopEasy Logo"
+          style="width: 100px; height: 100px; object-fit: contain; border-radius: 20px;">
+        <span class="logo">ShopEasy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="margin-bottom: 20px;">Your Shopping Cart</h1>
+
+    <div class="cart-table-wrapper">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-tbody">
+          <!-- Dynamically populated cart items -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cart-summary">
+      Grand Total: $<span id="cart-total">0.00</span>
+    </div>
+
+    <section class="checkout-section">
+      <h2 style="margin-bottom: 20px;">Checkout Details</h2>
+      <form id="checkout-form" novalidate>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Syed Muhammad Darain">
+          <span class="error-msg" id="err-fullName"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="example@domain.com">
+          <span class="error-msg" id="err-email"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="03001234567">
+          <span class="error-msg" id="err-phone"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <select id="city">
+            <option value="">Select your city</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+          </select>
+          <span class="error-msg" id="err-city"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <textarea id="address" rows="3" placeholder="Enter complete home/office address..."></textarea>
+          <span class="error-msg" id="err-address"></span>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%;">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ShopEasy Web Store. All rights reserved.</p>
+    <p style="text-align: right;">Syed Muhammad Darain Shah</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+
+</html>

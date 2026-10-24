@@ -1,7 +1,7 @@
 # ShopEasy
 
-Student Name: [Your Name]
-Roll Number: [Your Roll Number]
+Student Name: Muhammad Darain Shah
+Roll Number: 70175129
 
 ## Project Theme
 ShopEasy is a premium electronics and accessories store built as a responsive web assignment. The site includes a homepage, product catalog, shopping cart, and checkout flow using HTML, CSS, JavaScript, and jQuery.
